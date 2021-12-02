@@ -1,0 +1,45 @@
+.wacthvideo_container {
+  display: grid;
+  grid-gap: 5%;
+  padding: 0% 5%;
+  grid-template-columns: 3fr 1.5fr;
+  /* border: 1px solid black; */
+}
+
+.watchvideo_left {
+  /* border: 1px solid black; */
+  height: 700px;
+}
+.watchvideo_right {
+  /* border: 1px solid black; */
+  height: 500px;
+}
+.watchVideo_channel {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.watchVideo_channelimg {
+  height: 50px;
+  width: 50px;
+}
+.watchVideo_subscribediv {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+.watchVideo_btn {
+  height: 35px;
+  background-color: rgb(204, 0, 0);
+  width: 130px;
+  color: white;
+  border: none;
+}
+.wactchVideo_right_similar {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3%;
+}
+
+.watchVideo_likebtn {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
