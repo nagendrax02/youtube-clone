@@ -1,6 +1,6 @@
 
 import Sidebar from "./SideBar";
-import RecommendedVideos from "./RecommendedVideos";
+import {RecommendedVideos} from "./RecommendedVideos";
 
 function HomePage(){
 
