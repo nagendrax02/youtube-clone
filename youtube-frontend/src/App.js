@@ -4,7 +4,7 @@ import {Switch, Route} from "react-router-dom";
 import VideoPage from "./Components/VideoPage";
 import SearchPage from "./Components/SearchPage";
 import TrendingPage from "./Components/Trending";
-
+import {Login} from './Components/Login'
 
 function App () {
   return (
@@ -13,6 +13,9 @@ function App () {
       <Switch>
         <Route exact path="/">
           <HomePage />
+        </Route>
+        <Route path='/login'>
+          <Login></Login>
         </Route>
         <Route exact path="/video/:id">
           <VideoPage />

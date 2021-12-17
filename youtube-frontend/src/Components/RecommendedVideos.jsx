@@ -23,12 +23,9 @@ export function RecommendedVideos(){
     return <div className="max-3"> {videos.map(el=>{
       console.log('className:', el.views)
       return (
-    //     <video controls autoplay width="300" class="video-player">
-    //     <source src={`http://localhost:8080/api/video/${el.videopath}`}/>
-    // </video>
+
 
     <div className="recommended">
-        {/* <h2>Recommended</h2> */}
 
         <div className="recommendedVideo">
           <Link to={`/video/${el._id}`}> 

@@ -64,11 +64,15 @@ function Navbar(){
           <VideocamIcon style={{ fontSize: 28 }} className="header-icon" />
           <AppsIcon style={{ fontSize: 28 }} className="header-icon" />
           <NotificationsIcon style={{ fontSize: 28 }} className="header-icon" />
-          {
+         <Link to='/login'> <Button variant="outlined">Sign In</Button></Link>
+
+          {/* {
             user === null ?
-            (<Button variant="outlined" onClick={signInWithGoogle}>Sign In</Button>):
+            // (<Button variant="outlined" onClick={signInWithGoogle}>Sign In</Button>):
+            (<Button variant="outlined" to='/login'>Sign In</Button>):
+
             (<Avatar src={user.photoURL} onClick={signOut} style={{cursor:"pointer"}}></Avatar>)
-          }
+          } */}
         </div>
       </div> 
     )
