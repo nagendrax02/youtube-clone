@@ -1,38 +1,35 @@
 const mongoose = require("mongoose");
 
 const videoSchema = new mongoose.Schema({
-    owner: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'user'
+    owner:{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'user'
     },
-    name: {
-        type: String,
-        required: [true, "video name is required to upload video"]
+    name:{
+        type:String,
+        required:[true, "video name is required to upload video"]
     },
-    thumbnail: {
-        type: String
+    videopath:{
+        type:String,
+        required:[true, "video path is required to upload"],
+        unique:[true, "Video path already exist"],
     },
-    videopath: {
-        type: String,
-        required: [true, "video path is required to upload"],
-        unique: [true, "Video path already exist"],
+    likes:{
+        type:Number,
+        default:0
     },
-    likes: {
-        type: Number,
-        default: 0
+    dislikes:{
+        type:Number,
+        default:0
     },
-    dislikes: {
-        type: Number,
-        default: 0
+    views:{
+        type:Array,
+        default:[]
     },
-    views: {
-        type: Array,
-        default: []
-    },
-    comment: {
-        type: Array,
-        default: []
+    comment:{
+        type:Array,
+        default:[]
     }
-});
+})
 
-module.exports = mongoose.model("video", videoSchema);
+module.exports = mongoose.model("video", videoSchema)

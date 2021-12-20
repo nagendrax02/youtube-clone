@@ -1,14 +1,34 @@
 <!DOCTYPE html>
-<html>
-
-
-
-     <body>
-
-          <img src="http://localhost:8080/api/video/..\\videos\\1636717183564780094390profile Pic.png"/>
-
-
-          <video controls  autoplay> <source src="http://localhost:8080/api/video/..\\videos\\1636717183582230240106zoom_0.mp4"></video>
-     </body>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Stream</title>
+    <style>
+        body{
+           background-color: darkslategray; 
+        }
+        .heading{
+            text-align: center;
+            color: wheat;
+        }
+        .player-div{
+            text-align: center;
+        }
+        .video-player{
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+    <h1>Youtube Clone Video Stream</h1>
+    </div>
+    <div class="player-div">
+    <video controls autoplay width="500" class="video-player">
+        <source src="https://masai-youtube.herokuapp.com/api/video/618e31bda87597826bbebdcd-ac9064b9-30f6-48b5-867d-afc5806e1ab8">
+    </video>
+</div>
+</body>
 </html>
